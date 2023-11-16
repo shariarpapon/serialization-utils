@@ -50,9 +50,8 @@ namespace ObjectSerializationHelper
                 dataObject = (T)formatter.Deserialize(fs);
                 return true;
             }
-            catch(System.Exception ex)
+            catch
             {
-                Debug.Log(ex.Message);
                 return false;
             }
         }
